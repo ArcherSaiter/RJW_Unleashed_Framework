@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef ParentName="UF_SolutionBase">
+    <defName>UF_Solution_Fertilizer</defName>
+    <label>Aphrodisiac fertilizer</label>
+    <description>Aphrodisiac fertilizer</description>
+	<graphicData>
+		<texPath>Items/Solution/Base</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>0.85</drawSize>
+		<color>(32, 0, 192)</color>
+    </graphicData>
+    <recipeMaker>
+		<researchPrerequisite>LewdChemistry</researchPrerequisite>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<soundWorking>Recipe_Drug</soundWorking>
+		<workSkill>Intellectual</workSkill>
+		<displayPriority>2001</displayPriority>
+		<skillRequirements>
+			<Intellectual>4</Intellectual>
+		</skillRequirements>
+    </recipeMaker>
+	<costList>
+		<UF_Solution>1</UF_Solution>
+    </costList>
+    <statBases>
+		<MarketValue>25</MarketValue>
+    </statBases>
+    <ingestible>
+		<preferability>NeverForNutrition</preferability>
+		<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+		<chairSearchRadius>8</chairSearchRadius>
+		<baseIngestTicks>200</baseIngestTicks>
+		<foodType>Fluid, Processed</foodType>
+		<drugCategory>Hard</drugCategory>
+		<ingestSound>Ingest_Drink</ingestSound>
+		<ingestHoldUsesTable>false</ingestHoldUsesTable>
+		<ingestCommandString>Drink {0}</ingestCommandString>
+		<ingestReportString>Drinking {0}.</ingestReportString>
+		<joyKind>Chemical</joyKind>
+		<joy>0.20</joy>
+		<outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+			<hediffDef>AphrodisiacFertilizerHigh</hediffDef>
+			<severity>0.75</severity>
+			<toleranceChemical>AphrodisiacExtractChemical</toleranceChemical>
+			</li>
+			<li Class="IngestionOutcomeDoer_OffsetNeed">
+			<need>Sex</need>
+			<offset>-0.35</offset>
+			</li>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>AphrodisiacExtractTolerance</hediffDef>
+				<toleranceChemical>AphrodisiacExtractChemical</toleranceChemical>
+				<severity>0.10</severity>
+				<divideByBodySize>true</divideByBodySize>
+				<multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+			</li>
+		</outcomeDoers>
+    </ingestible>
+	<comps>
+		<li Class="CompProperties_Drug">
+			<chemical>AphrodisiacExtractChemical</chemical>
+			<addictiveness>0.01</addictiveness>
+			<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+			<needLevelOffset>0.9</needLevelOffset>
+			<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+			<listOrder>100</listOrder>
+			<overdoseSeverityOffset>0.15~0.30</overdoseSeverityOffset>
+			<largeOverdoseChance>0.01</largeOverdoseChance>
+		</li>
+    </comps>
+    <allowedArchonexusCount>200</allowedArchonexusCount>
+	</ThingDef>
+	
+	<HediffDef>
+		<defName>AphrodisiacFertilizerHigh</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Fertilizer effect</label>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<description>Affected by Fertilizer.</description>
+		<isBad>false</isBad>
+		<comps>
+		<li Class="HediffCompProperties_SeverityPerDay">
+			<severityPerDay>-0.2</severityPerDay>
+		</li>
+		</comps>
+		<stages>
+		<li>
+			<minSeverity>0</minSeverity>
+			<label>refractory period</label>
+			<statOffsets>
+				<SexFrequency>-0.75</SexFrequency>
+				<SexSatisfaction>-0.75</SexSatisfaction>
+			</statOffsets>
+			<statFactors>
+				<RestFallRateFactor>1.25</RestFallRateFactor>
+			</statFactors>
+			<hungerRateFactorOffset>0.2</hungerRateFactorOffset>
+			<socialFightChanceFactor>0.75</socialFightChanceFactor>
+		</li>
+		<li>
+			<minSeverity>0.2</minSeverity>
+			<label>pumped up</label>
+			<statOffsets>
+				<SexFrequency>3</SexFrequency>
+				<SexSatisfaction>2</SexSatisfaction>
+			</statOffsets>
+			<statFactors>
+				<RestFallRateFactor>0.75</RestFallRateFactor>
+			</statFactors>
+			<hungerRateFactorOffset>0.2</hungerRateFactorOffset>
+			<socialFightChanceFactor>1.5</socialFightChanceFactor>
+			<painOffset>-0.1</painOffset>
+			<capMods>
+				<li>
+					<capacity>RJW_Fertility</capacity>
+					<offset>5.0</offset>
+				</li>
+				<li>
+				<capacity>Consciousness</capacity>
+				<offset>0.1</offset>
+				</li>
+				<li>
+				<capacity>BloodPumping</capacity>
+				<offset>1.0</offset>
+				</li>
+			</capMods>
+		</li>
+		</stages>
+	</HediffDef>
+	
+	<ThoughtDef>
+		<defName>AphrodisiacFertilizerThought</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>AphrodisiacFertilizerHigh</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+		<li>
+			<label>drained</label>
+			<description>Feeling weak...</description>
+			<baseMoodEffect>-3</baseMoodEffect>
+		</li>
+		<li>
+			<label>pumped up</label>
+			<description>BREEDING TIME!</description>
+			<baseMoodEffect>9</baseMoodEffect>
+		</li>
+		</stages>
+	</ThoughtDef>
+	
+</Defs>

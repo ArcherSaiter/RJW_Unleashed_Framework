@@ -1,17 +1,30 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   
-  <ResearchProjectDef>
-    <defName>AphrodisiacTreeCultivation</defName>
-    <label>Aphrodisiac tree cultivation</label>
-    <description>Learn to cultivate the rare and valuable aphrodisiac tree, unlocking its potential for both sustenance and unique stimulating properties.</description>
-    <baseCost>400</baseCost>
-    <techLevel>Neolithic</techLevel>
-    <!--<prerequisites>
-      <li>TreeSowing</li>
-    </prerequisites>-->
-    <researchViewX>0.00</researchViewX>
-    <researchViewY>5.00</researchViewY>
-  </ResearchProjectDef>
+	<ResearchProjectDef>
+		<defName>AphrodisiacTreeCultivation</defName>
+		<label>Aphrodisiac tree cultivation</label>
+		<description>Learn to cultivate the rare and valuable aphrodisiac tree, unlocking its potential for both sustenance and unique stimulating properties.</description>
+		<baseCost>400</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<!--<prerequisites>
+		<li>TreeSowing</li>
+		</prerequisites>-->
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>5.00</researchViewY>
+	</ResearchProjectDef>
 
+	<ResearchProjectDef>
+		<defName>LewdChemistry</defName>
+		<label>Lewd chemistry</label>
+		<description>Learn to crate chemical solutions tailored for lewd purposes.</description>
+		<baseCost>300</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>DrugProduction</li>
+		</prerequisites>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>5.00</researchViewY>
+	</ResearchProjectDef>
+	
 </Defs>
