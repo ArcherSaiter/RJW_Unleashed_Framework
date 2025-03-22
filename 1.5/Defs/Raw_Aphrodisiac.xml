@@ -82,9 +82,9 @@
 				<!--duration of added thought, in Days(60 000 ticks)-->
 				<thoughtDurationDays>0</thoughtDurationDays>
 				<!--chance to get trait, from 0.0 to 1.0 where 1.0 = 100%-->
-				<traitGainProbability>0.1</traitGainProbability>
+				<traitGainProbability>0.0</traitGainProbability>
 				<!--chance to get gene, from 0.0 to 1.0 where 1.0 = 100%-->
-				<geneGainProbability>0.1</geneGainProbability>
+				<geneGainProbability>0.0</geneGainProbability>
 				<!--allows to bypass conflicts and/or add same trait, use carefully-->
 				<traitForced>false</traitForced> <!--true or false-->
 				<!--whether added gene is endo- or xeno- -->
