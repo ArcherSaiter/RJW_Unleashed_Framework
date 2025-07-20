@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef Name="UF_SolutionBase" ParentName="MakeableDrugBase" Abstract="True">
+    <statBases>
+		<Mass>0.1</Mass>
+		<MaxHitPoints>30</MaxHitPoints>
+		<Flammability>1.0</Flammability>
+		<MarketValue>10</MarketValue>
+		<DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+	<minRewardCount>10</minRewardCount>
+    <tradeTags>
+		<li>TechHediff</li>
+    </tradeTags>
+	</ThingDef>
+	
+	<ThingDef ParentName="UF_SolutionBase">
+    <defName>UF_Solution</defName>
+    <label>Aphrodisiac extract</label>
+    <description>Aphrodisiac extract</description>
+	<graphicData>
+		<texPath>Items/Solution/Base</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>0.85</drawSize>
+		<color>(128, 0, 128)</color>
+    </graphicData>
+    <recipeMaker>
+		<researchPrerequisite>LewdChemistry</researchPrerequisite>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<soundWorking>Recipe_Drug</soundWorking>
+		<workSkill>Intellectual</workSkill>
+		<displayPriority>2000</displayPriority>
+		<skillRequirements>
+			<Intellectual>4</Intellectual>
+		</skillRequirements>
+    </recipeMaker>
+    <costList>
+		<AphrodisiacFruit>4</AphrodisiacFruit>
+    </costList>
+    <statBases>
+		<MarketValue>20</MarketValue>
+    </statBases>
+    <ingestible>
+		<preferability>NeverForNutrition</preferability>
+		<maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+		<chairSearchRadius>8</chairSearchRadius>
+		<baseIngestTicks>200</baseIngestTicks>
+		<foodType>Fluid, Processed</foodType>
+		<drugCategory>Hard</drugCategory>
+		<ingestSound>Ingest_Drink</ingestSound>
+		<ingestHoldUsesTable>false</ingestHoldUsesTable>
+		<ingestCommandString>Drink {0}</ingestCommandString>
+		<ingestReportString>Drinking {0}.</ingestReportString>
+		<joyKind>Chemical</joyKind>
+		<joy>0.20</joy>
+		<outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+			<hediffDef>AphrodisiacExtractHigh</hediffDef>
+			<severity>0.75</severity>
+			<toleranceChemical>AphrodisiacExtractChemical</toleranceChemical>
+			</li>
+			<li Class="IngestionOutcomeDoer_OffsetNeed">
+			<need>Sex</need>
+			<offset>-0.15</offset>
+			</li>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+				<hediffDef>AphrodisiacExtractTolerance</hediffDef>
+				<toleranceChemical>AphrodisiacExtractChemical</toleranceChemical>
+				<severity>0.10</severity>
+				<divideByBodySize>true</divideByBodySize>
+				<multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+			</li>
+		</outcomeDoers>
+    </ingestible>
+	<comps>
+		<li Class="CompProperties_Drug">
+			<chemical>AphrodisiacExtractChemical</chemical>
+			<addictiveness>0.01</addictiveness>
+			<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+			<needLevelOffset>0.9</needLevelOffset>
+			<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+			<listOrder>100</listOrder>
+			<overdoseSeverityOffset>0.15~0.30</overdoseSeverityOffset>
+			<largeOverdoseChance>0.01</largeOverdoseChance>
+		</li>
+    </comps>
+    <allowedArchonexusCount>200</allowedArchonexusCount>
+	</ThingDef>
+	
+	<HediffDef>
+		<defName>AphrodisiacExtractHigh</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>extract effect</label>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<description>Affected by aphrodisiac extract.</description>
+		<isBad>false</isBad>
+		<comps>
+		<li Class="HediffCompProperties_SeverityPerDay">
+			<severityPerDay>-1.0</severityPerDay>
+		</li>
+		</comps>
+		<stages>
+		<li>
+			<minSeverity>0</minSeverity>
+			<label>refractory period</label>
+			<statOffsets>
+				<SexFrequency>-0.5</SexFrequency>
+				<SexSatisfaction>-0.5</SexSatisfaction>
+				<WorkSpeedGlobal>-0.35</WorkSpeedGlobal>
+			</statOffsets>
+			<statFactors>
+				<RestFallRateFactor>1.5</RestFallRateFactor>
+			</statFactors>
+			<hungerRateFactorOffset>0.25</hungerRateFactorOffset>
+			<socialFightChanceFactor>1.5</socialFightChanceFactor>
+			<painOffset>0.1</painOffset>
+		</li>
+		<li>
+			<minSeverity>0.2</minSeverity>
+			<label>turned on</label>
+			<statOffsets>
+				<SexFrequency>2</SexFrequency>
+				<SexSatisfaction>1.5</SexSatisfaction>
+				<WorkSpeedGlobal>-0.25</WorkSpeedGlobal>
+			</statOffsets>
+			<statFactors>
+				<RestFallRateFactor>0.75</RestFallRateFactor>
+			</statFactors>
+			<hungerRateFactorOffset>0.1</hungerRateFactorOffset>
+			<socialFightChanceFactor>1.25</socialFightChanceFactor>
+			<painOffset>-0.25</painOffset>
+			<capMods>
+				<li>
+					<capacity>RJW_Fertility</capacity>
+					<offset>0.5</offset>
+				</li>
+				<li>
+				<capacity>Consciousness</capacity>
+				<postFactor>0.90</postFactor>
+				</li>
+				<li>
+				<capacity>Manipulation</capacity>
+				<offset>0.1</offset>
+				</li>
+				<li>
+				<capacity>Moving</capacity>
+				<offset>0.5</offset>
+				</li>
+				<li>
+				<capacity>BloodPumping</capacity>
+				<offset>0.5</offset>
+				</li>
+				<li>
+				<capacity>Breathing</capacity>
+				<offset>0.25</offset>
+				</li>
+				<li>
+				<capacity>Hearing</capacity>
+				<offset>0.25</offset>
+				</li>
+				<li>
+				<capacity>Sight</capacity>
+				<offset>0.25</offset>
+				</li>
+			</capMods>
+		</li>
+		</stages>
+	</HediffDef>
+	
+	<ThoughtDef>
+		<defName>AphrodisiacExtractThought</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>AphrodisiacExtractHigh</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+		<li>
+			<label>backlash</label>
+			<description>Head hurts.</description>
+			<baseMoodEffect>-10</baseMoodEffect>
+		</li>
+		<li>
+			<label>stimulated</label>
+			<description>Who needs fucking?! Who needs beating?!</description>
+			<baseMoodEffect>10</baseMoodEffect>
+		</li>
+		</stages>
+	</ThoughtDef>
+	
+	<HediffDef ParentName="DrugToleranceBase">
+		<defName>AphrodisiacExtractTolerance</defName>
+		<label>aphrodisiac extract tolerance</label>               
+		<description>Getting used to the extract.</description>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.05</severityPerDay>
+			</li>
+			<li Class="HediffCompProperties_DrugEffectFactor">
+				<chemical>AphrodisiacExtractChemical</chemical>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<ChemicalDef>
+		<defName>AphrodisiacExtractChemical</defName>
+		<label>Aphrodisiac extract</label>
+		<addictionHediff>AphrodisiacExtractAddiction</addictionHediff>
+		<toleranceHediff>AphrodisiacExtractTolerance</toleranceHediff>
+		<onGeneratedAddictedToleranceChance>0.5</onGeneratedAddictedToleranceChance>
+		<generateAddictionGenes>true</generateAddictionGenes>
+		<onGeneratedAddictedEvents>
+			<li>
+				<hediff>ChemicalDamageSevere</hediff>
+				<chance>0.15</chance>
+				<partsToAffect>
+					<li>Heart</li>
+				</partsToAffect>
+			</li>
+		</onGeneratedAddictedEvents>
+		<geneToleranceBuildupFactorResist>0.5</geneToleranceBuildupFactorResist>
+		<geneToleranceBuildupFactorImmune>0</geneToleranceBuildupFactorImmune>
+		<geneOverdoseChanceFactorResist>0.5</geneOverdoseChanceFactorResist>
+		<geneOverdoseChanceFactorImmune>0</geneOverdoseChanceFactorImmune>
+	</ChemicalDef>
+	
+	<HediffDef ParentName="AddictionBase">
+		<defName>AphrodisiacExtractAddiction</defName>
+		<hediffClass>Hediff_Addiction</hediffClass>
+		<label>aphrodisiac extract addiction</label>
+		<description>Addicted to the extract.</description>
+		<chemicalNeed>Chemical_AphrodisiacExtract</chemicalNeed>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.1</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li></li>
+			<li>
+				<label>withdrawal</label>
+				<statOffsets>
+					<SexFrequency>-0.5</SexFrequency>
+					<SexSatisfaction>-0.5</SexSatisfaction>
+					<WorkSpeedGlobal>-0.35</WorkSpeedGlobal>
+				</statOffsets>
+				<statFactors>
+					<RestFallRateFactor>2</RestFallRateFactor>
+				</statFactors>
+				<hungerRateFactorOffset>0.5</hungerRateFactorOffset>
+				<socialFightChanceFactor>2</socialFightChanceFactor>
+				<painOffset>0.1</painOffset>
+				<painFactor>2</painFactor>
+				<capMods>
+				<li>
+					<capacity>RJW_Fertility</capacity>
+					<postFactor>0.90</postFactor>
+				</li>
+				<li>
+					<capacity>Consciousness</capacity>
+					<postFactor>0.90</postFactor>
+				</li>
+				<li>
+					<capacity>Manipulation</capacity>
+					<offset>-0.1</offset>
+				</li>
+				<li>
+					<capacity>Moving</capacity>
+					<offset>-0.1</offset>
+				</li>
+				<li>
+					<capacity>Sight</capacity>
+					<offset>-0.1</offset>
+				</li>
+				<li>
+					<capacity>BloodPumping</capacity>
+					<offset>-0.1</offset>
+				</li>
+				<li>
+					<capacity>Breathing</capacity>
+					<offset>-0.1</offset>
+				</li>
+				<li>
+					<capacity>Hearing</capacity>
+					<offset>-0.1</offset>
+				</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<NeedDef ParentName="DrugAddictionNeedBase">
+		<defName>Chemical_AphrodisiacExtract</defName>
+		<needClass>Need_Chemical</needClass>
+		<label>Aphrodisiac extract</label>
+		<description>This creature is addicted to the extract of aphrodisiac fruit.</description>
+		<listPriority>11</listPriority>
+	</NeedDef>
+	
+</Defs>

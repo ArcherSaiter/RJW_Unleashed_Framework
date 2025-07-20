@@ -3,10 +3,11 @@
     <name>RJW_Unleashed_Framework</name>
     <author>ArcherSaiter</author>
     <packageId>rjw.unleashed.framework</packageId>
-    <modVersion>1.2</modVersion>
+    <modVersion>1.3</modVersion>
     <url>https://github.com/ArcherSaiter/RJW_Unleashed_Framework</url>
     <supportedVersions>
         <li>1.5</li>
+		<li>1.6</li>
     </supportedVersions>
     <modDependencies>
         <li>
