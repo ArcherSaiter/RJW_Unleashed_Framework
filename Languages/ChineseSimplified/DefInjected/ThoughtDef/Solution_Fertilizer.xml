@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: drained -->
+  <AphrodisiacFertilizerThought.stages.drained.label>疲劳</AphrodisiacFertilizerThought.stages.drained.label>
+  <!-- EN: Feeling weak... -->
+  <AphrodisiacFertilizerThought.stages.drained.description>感觉好虚弱...</AphrodisiacFertilizerThought.stages.drained.description>
+  <!-- EN: pumped up -->
+  <AphrodisiacFertilizerThought.stages.pumped_up.label>兴奋不已</AphrodisiacFertilizerThought.stages.pumped_up.label>
+  <!-- EN: BREEDING TIME! -->
+  <AphrodisiacFertilizerThought.stages.pumped_up.description>播种时间！</AphrodisiacFertilizerThought.stages.pumped_up.description>
+  
+</LanguageData>

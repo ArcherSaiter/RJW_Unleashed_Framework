@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Aphrodisiac fertilizer -->
+  <UF_Solution_Fertilizer.label>受精媒介物</UF_Solution_Fertilizer.label>
+  <!-- EN: Aphrodisiac fertilizer -->
+  <UF_Solution_Fertilizer.description>受精媒介物</UF_Solution_Fertilizer.description>
+  <!-- EN: Drink {0} -->
+  <UF_Solution_Fertilizer.ingestible.ingestCommandString>喝</UF_Solution_Fertilizer.ingestible.ingestCommandString>
+  <!-- EN: Drinking {0}. -->
+  <UF_Solution_Fertilizer.ingestible.ingestReportString>喝下</UF_Solution_Fertilizer.ingestible.ingestReportString>
+  
+</LanguageData>

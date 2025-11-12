@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Aphrodisiac extract -->
+  <UF_Solution.label>催情果提取物</UF_Solution.label>
+  <!-- EN: Aphrodisiac extract -->
+  <UF_Solution.description>催情果的提取物。</UF_Solution.description>
+  <!-- EN: Drink {0} -->
+  <UF_Solution.ingestible.ingestCommandString>喝</UF_Solution.ingestible.ingestCommandString>
+  <!-- EN: Drinking {0}. -->
+  <UF_Solution.ingestible.ingestReportString>喝下</UF_Solution.ingestible.ingestReportString>
+  
+</LanguageData>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Aphrodisiac fruit -->
+  <Chemical_AphrodisiacFruit.label>催情果</Chemical_AphrodisiacFruit.label>
+  <!-- EN: This creature got addicted to the aphrodisiac fruit. Being under its control is now a necessity -->
+  <Chemical_AphrodisiacFruit.description>这只生物已对催情果产生了依赖。如今，受其控制已成为必然。</Chemical_AphrodisiacFruit.description>
+  
+</LanguageData>

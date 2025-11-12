@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Mild warmth -->
+  <AphrodisiacFruitThought.stages.Mild_warmth.label>温和的暖意</AphrodisiacFruitThought.stages.Mild_warmth.label>
+  <!-- EN: I feel a pleasant warmth spreading through my body. Everything seems a bit more... interesting. -->
+  <AphrodisiacFruitThought.stages.Mild_warmth.description>我感到一股愉悦的暖意在体内蔓延开来。一切似乎都变得... 更有趣了。</AphrodisiacFruitThought.stages.Mild_warmth.description>
+  <!-- EN: Obfuscated mind -->
+  <AphrodisiacFruitThought.stages.Obfuscated_mind.label>模糊的思维</AphrodisiacFruitThought.stages.Obfuscated_mind.label>
+  <!-- EN: My thoughts are getting hazy, but in an oddly pleasant way. I can't stop thinking about... certain things. -->
+  <AphrodisiacFruitThought.stages.Obfuscated_mind.description>我的思绪变得有些模糊，但这种模糊却带着一种奇特的愉悦感。我无法停止思考...某些事情。</AphrodisiacFruitThought.stages.Obfuscated_mind.description>
+  <!-- EN: Lack of control -->
+  <AphrodisiacFruitThought.stages.Lack_of_control.label>失控</AphrodisiacFruitThought.stages.Lack_of_control.label>
+  <!-- EN: I'm finding it hard to focus on anything but my desires. I feel like I'm on fire! -->
+  <AphrodisiacFruitThought.stages.Lack_of_control.description>我发现自己很难将注意力从自己的欲望上移开。我感觉欲火难耐！</AphrodisiacFruitThought.stages.Lack_of_control.description>
+  <!-- EN: Obsession -->
+  <AphrodisiacFruitThought.stages.Obsession.label>痴迷</AphrodisiacFruitThought.stages.Obsession.label>
+  <!-- EN: I can't think straight anymore, desires are overwhelming! I HAVE to satisfy! -->
+  <AphrodisiacFruitThought.stages.Obsession.description>我现在脑子一片混乱，欲望如潮水般涌来！我必须满足它！</AphrodisiacFruitThought.stages.Obsession.description>
+  <!-- EN: Craze -->
+  <AphrodisiacFruitThought.stages.Craze.label>狂热</AphrodisiacFruitThought.stages.Craze.label>
+  <!-- EN: It is flooding my mind, the urge to obey the will of the fruit. MUST... Do... It... -->
+  <AphrodisiacFruitThought.stages.Craze.description>那种想要顺从果实意志的冲动充斥着我的脑海。我必须...去做...</AphrodisiacFruitThought.stages.Craze.description>
+  <!-- EN: Insanity -->
+  <AphrodisiacFruitThought.stages.Insanity.label>失去理智</AphrodisiacFruitThought.stages.Insanity.label>
+  <!-- EN: It consumes me, overtakes me... The chaotic whirlpool of desire, drowning everything in uncontrollable lust... -->
+  <AphrodisiacFruitThought.stages.Insanity.description>它吞噬我，淹没我...欲望的混沌漩涡，将万物淹没在无法控制的贪婪之中...</AphrodisiacFruitThought.stages.Insanity.description>
+  <!-- EN: Brainfuck -->
+  <AphrodisiacFruitThought.stages.Brainfuck.label>满脑子做爱</AphrodisiacFruitThought.stages.Brainfuck.label>
+  <!-- EN: NEED! IT! NOW! -->
+  <AphrodisiacFruitThought.stages.Brainfuck.description>我要做爱！就！现！在！</AphrodisiacFruitThought.stages.Brainfuck.description>
+  
+  <!-- EN: aphrodisiac fruit withdrawal -->
+  <AphrodisiacFruitWithdrawal.stages.aphrodisiac_fruit_withdrawal.label>催情果戒断</AphrodisiacFruitWithdrawal.stages.aphrodisiac_fruit_withdrawal.label>
+  <!-- EN: I feel restless, pained, hungry and frustrated. My body craves the stimulation of the strange fruit. -->
+  <AphrodisiacFruitWithdrawal.stages.aphrodisiac_fruit_withdrawal.description>我感到坐立不安、痛苦、饥饿和沮丧。我的身体渴望着那奇怪水果的刺激。</AphrodisiacFruitWithdrawal.stages.aphrodisiac_fruit_withdrawal.description>
+  
+</LanguageData>

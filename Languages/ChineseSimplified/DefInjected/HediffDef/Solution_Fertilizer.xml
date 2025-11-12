@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Fertilizer effect -->
+  <AphrodisiacFertilizerHigh.label>受精媒介物影响</AphrodisiacFertilizerHigh.label>
+  <!-- EN: Affected by Fertilizer. -->
+  <AphrodisiacFertilizerHigh.description>受到受精媒介物的影响。</AphrodisiacFertilizerHigh.description>
+  <!-- EN: refractory period -->
+  <AphrodisiacFertilizerHigh.stages.refractory_period.label>不应期</AphrodisiacFertilizerHigh.stages.refractory_period.label>
+  <!-- EN: pumped up -->
+  <AphrodisiacFertilizerHigh.stages.pumped_up.label>兴奋不已</AphrodisiacFertilizerHigh.stages.pumped_up.label>
+  
+</LanguageData>

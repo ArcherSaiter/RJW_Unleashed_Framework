@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: Aphrodisiac extract -->
+  <Chemical_AphrodisiacExtract.label>催情果提取物</Chemical_AphrodisiacExtract.label>
+  <!-- EN: This creature is addicted to the extract of aphrodisiac fruit. -->
+  <Chemical_AphrodisiacExtract.description>该生物对催情果的提取物上瘾。</Chemical_AphrodisiacExtract.description>
+  
+</LanguageData>

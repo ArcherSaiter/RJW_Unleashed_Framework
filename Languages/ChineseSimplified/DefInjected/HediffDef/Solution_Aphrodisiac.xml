@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: aphrodisiac extract addiction -->
+  <AphrodisiacExtractAddiction.label>催情果提取物成瘾</AphrodisiacExtractAddiction.label>
+  <!-- EN: Addicted to the extract. -->
+  <AphrodisiacExtractAddiction.description>对催情果提取物上瘾。</AphrodisiacExtractAddiction.description>
+  <!-- EN: withdrawal -->
+  <AphrodisiacExtractAddiction.stages.withdrawal.label>戒断</AphrodisiacExtractAddiction.stages.withdrawal.label>
+  
+  <!-- EN: extract effect -->
+  <AphrodisiacExtractHigh.label>催情果提取物影响</AphrodisiacExtractHigh.label>
+  <!-- EN: Affected by aphrodisiac extract. -->
+  <AphrodisiacExtractHigh.description>受到催情果提取物影响。</AphrodisiacExtractHigh.description>
+  <!-- EN: refractory period -->
+  <AphrodisiacExtractHigh.stages.refractory_period.label>不应期</AphrodisiacExtractHigh.stages.refractory_period.label>
+  <!-- EN: turned on -->
+  <AphrodisiacExtractHigh.stages.turned_on.label>开关被打开</AphrodisiacExtractHigh.stages.turned_on.label>
+  
+  <!-- EN: aphrodisiac extract tolerance -->
+  <AphrodisiacExtractTolerance.label>催情果提取物耐受</AphrodisiacExtractTolerance.label>
+  <!-- EN: Getting used to the extract. -->
+  <AphrodisiacExtractTolerance.description>适应了提取物的影响。</AphrodisiacExtractTolerance.description>
+  <!-- EN: small -->
+  <AphrodisiacExtractTolerance.stages.small.label>低</AphrodisiacExtractTolerance.stages.small.label>
+  <!-- EN: large -->
+  <AphrodisiacExtractTolerance.stages.large.label>中</AphrodisiacExtractTolerance.stages.large.label>
+  <!-- EN: massive -->
+  <AphrodisiacExtractTolerance.stages.massive.label>高</AphrodisiacExtractTolerance.stages.massive.label>
+  
+</LanguageData>

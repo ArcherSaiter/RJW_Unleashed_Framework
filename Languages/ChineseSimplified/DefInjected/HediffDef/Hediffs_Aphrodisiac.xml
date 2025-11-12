@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: aphrodisiac fruit addiction -->
+  <AphrodisiacFruitAddiction.label>催情果成瘾</AphrodisiacFruitAddiction.label>
+  <!-- EN: Addicted to the strange fruit. -->
+  <AphrodisiacFruitAddiction.description>沉迷于奇异的果实。</AphrodisiacFruitAddiction.description>
+  <!-- EN: withdrawal -->
+  <AphrodisiacFruitAddiction.stages.withdrawal.label>戒断</AphrodisiacFruitAddiction.stages.withdrawal.label>
+  
+  <!-- EN: affected by strange fruit -->
+  <AphrodisiacFruitEffect.label>催情果影响</AphrodisiacFruitEffect.label>
+  <!-- EN: This creature is affected by the strange fruit. Among mixed feelings, the most clear are inner heat and blood rush. -->
+  <AphrodisiacFruitEffect.description>这只生物受到了催情果的影响。在复杂的情绪中，最明显的是体升高与血液奔涌。</AphrodisiacFruitEffect.description>
+  <!-- EN: mild warmth -->
+  <AphrodisiacFruitEffect.stages.mild_warmth.label>温和的暖意</AphrodisiacFruitEffect.stages.mild_warmth.label>
+  <!-- EN: obfuscated mind -->
+  <AphrodisiacFruitEffect.stages.obfuscated_mind.label>模糊的思维</AphrodisiacFruitEffect.stages.obfuscated_mind.label>
+  <!-- EN: lack of control -->
+  <AphrodisiacFruitEffect.stages.lack_of_control.label>失控</AphrodisiacFruitEffect.stages.lack_of_control.label>
+  <!-- EN: obsession -->
+  <AphrodisiacFruitEffect.stages.obsession.label>痴迷</AphrodisiacFruitEffect.stages.obsession.label>
+  <!-- EN: craze -->
+  <AphrodisiacFruitEffect.stages.craze.label>狂热</AphrodisiacFruitEffect.stages.craze.label>
+  <!-- EN: insanity -->
+  <AphrodisiacFruitEffect.stages.insanity.label>失去理智</AphrodisiacFruitEffect.stages.insanity.label>
+  <!-- EN: brainfuck -->
+  <AphrodisiacFruitEffect.stages.brainfuck.label>满脑子做爱</AphrodisiacFruitEffect.stages.brainfuck.label>
+  
+  <!-- EN: aphrodisiac fruit tolerance -->
+  <AphrodisiacFruitTolerance.label>催情果耐受</AphrodisiacFruitTolerance.label>
+  <!-- EN: Getting used to the strange fruit. -->
+  <AphrodisiacFruitTolerance.description>习惯了催情果。</AphrodisiacFruitTolerance.description>
+  <!-- EN: small -->
+  <AphrodisiacFruitTolerance.stages.small.label>低</AphrodisiacFruitTolerance.stages.small.label>
+  <!-- EN: large -->
+  <AphrodisiacFruitTolerance.stages.large.label>中</AphrodisiacFruitTolerance.stages.large.label>
+  <!-- EN: massive -->
+  <AphrodisiacFruitTolerance.stages.massive.label>高</AphrodisiacFruitTolerance.stages.massive.label>
+  
+</LanguageData>

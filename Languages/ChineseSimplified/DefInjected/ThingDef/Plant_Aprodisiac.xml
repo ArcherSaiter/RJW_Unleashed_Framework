@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <!-- EN: aphrodisiac tree -->
+  <Plant_Aphrodisiac.label>催情树</Plant_Aphrodisiac.label>
+  <!-- EN: A short, rare tree that produces small, fragrant fruits. While all effects of these fruits are yet to be explored, it is known that thay are juicy, nutricious and when consumed, they stimulate creatures in a way that makes them way more sexually active than usual.\n\nThe tree itself is rough, as well as its leaves, which makes them hard to work with, however, robust structure also allows it to survive in most environments. As it can grow even on rocks with barely any light, there are legends of cave dwellers surviving just on aphrodisiac fruits, but the same legends also mention some sort of <color=#E5E54C>price</color>. Thus, some cultures consider it sacred, while others see it as a dangerous temptation.\n\n Aphrodisiac trees tend to live long, extracting most of nutrients out of the soil, which makes them efficient in most conditions despite being hard to work with. Among other properties, they also have a unique charm, which makes them pleasing to look at. -->
+  <Plant_Aphrodisiac.description>一种矮小稀有的树，结出的小果芳香扑鼻。尽管这种果实的所有功效尚未完全研究清楚，但已知其多汁、营养丰富，食用后能极大激发生物的性欲，使其远超平常状态。这种树本身和它的叶子都很粗糙，处理起来颇为棘手，不过其坚固的结构也使其能在大多数环境中存活。由于它甚至能在几乎没有光照的岩石上生长，有传说称洞穴居民仅靠这种催情果就能生存，但同样的传说也提到其存在某种代价。因此，一些文化将其视为神圣之物，而另一些文化则视其为危险的诱惑。这种催情树寿命很长，能从土壤中汲取大部分养分，这使得它在大多数条件下都颇具效率，尽管处理起来很麻烦。除此之外，它还有一种独特的魅力，令人赏心悦目。</Plant_Aphrodisiac.description>
+  
+</LanguageData>
